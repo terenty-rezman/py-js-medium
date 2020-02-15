@@ -31,11 +31,13 @@ import { Medium } from './medium.js'
 
 const medium = new Medium('http://' + document.domain + ':' + location.port);
 ```
+to connect to __medium__ server runing on backend;
 
 then set value like this:
 ```
 medium.set('speed', Number(0))
 ```
+backend will receive update if subscribed to `speed` variable;
 
 and updates are received like this:
 ```
@@ -43,3 +45,7 @@ medium.subscribe('speed', (value) => {
     console.log(value);
 })
 ```
+now whenever `speed` value changed by backend, frontend is notified;
+
+the above allows for updating and receiving updates on values for both backend and frontend whenever values get
+updated by either frontend or backend
