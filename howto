@@ -1,0 +1,3 @@
+cd your_project
+python3 -m venv ./.venv (to create venv inside project dir)
+pipenv install (to install dependencies)
