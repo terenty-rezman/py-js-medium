@@ -51,6 +51,8 @@ the above allows for updating and receiving updates on values for both backend a
 updated by either frontend or backend
 
 # installing dependencies
-`pip install flask`
-`pip install flask-socketio`
-`pip install eventlet`
+```
+$ pip install flask
+$ pip install flask-socketio
+$ pip install eventlet
+```
