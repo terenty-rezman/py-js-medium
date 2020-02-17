@@ -49,3 +49,8 @@ now whenever `speed` value changed by backend, frontend is notified;
 
 the above allows for updating and receiving updates on values for both backend and frontend whenever values get
 updated by either frontend or backend
+
+# installing dependencies
+`pip install flask`
+`pip install flask-socketio`
+`pip install eventlet`
