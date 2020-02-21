@@ -1,5 +1,9 @@
 from flask import Flask, request
 from flask_socketio import SocketIO, emit
+import mimetypes
+
+# fix for windows (otherwise module .js served as text/plain)
+mimetypes.add_type('application/javascript', '.js')
 
 
 class CustomFlask(Flask):
